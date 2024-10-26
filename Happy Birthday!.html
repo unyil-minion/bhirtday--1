@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)file:///C:/ujian%20koding/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday!</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffebcd;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      overflow: hidden;
+    }
+
+    .container {
+      text-align: center;
+      color: #ff69b4;
+    }
+
+    h1 {
+      font-size: 4rem;
+      margin: 0;
+      animation: zoomIn 2s ease-in-out;
+    }
+
+    @keyframes zoomIn {
+      from { transform: scale(0.5); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    .balloons {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 10px;
+    }
+
+    .balloon {
+      width: 60px;
+      height: 80px;
+      background-color: #ff6347;
+      border-radius: 50%;
+      position: relative;
+      animation: float 5s ease-in-out infinite;
+      opacity: 0.8;
+    }
+
+    .balloon::after {
+      content: "";
+      position: absolute;
+      bottom: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 4px;
+      height: 20px;
+      background-color: #333;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-100px); }
+      100% { transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Happy Birthday!</h1>
+    <p>Wishing you a day filled with joy and happiness.</p>
+  </div>
+
+  <div class="balloons">
+    <div class="balloon" style="background-color: #ff6347; animation-delay: 0s;"></div>
+    <div class="balloon" style="background-color: #ff8c00; animation-delay: 1s;"></div>
+    <div class="balloon" style="background-color: #ffd700; animation-delay: 2s;"></div>
+    <div class="balloon" style="background-color: #32cd32; animation-delay: 3s;"></div>
+    <div class="balloon" style="background-color: #1e90ff; animation-delay: 4s;"></div>
+  </div>
+
+
+</body></html>
